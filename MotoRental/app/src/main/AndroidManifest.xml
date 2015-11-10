@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sscholtz.motorental" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/moto"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="rental.example.sscholtz.motorental.main_page"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="rental.example.sscholtz.motorental.motorcycle_rental"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="rental.example.sscholtz.motorental.about_us"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name="rental.example.sscholtz.motorental.contact_us"
+            android:label="@string/title_activity_contact_us" >
+        </activity>
+        <activity
+            android:name="rental.example.sscholtz.motorental.customer_details"
+            android:label="@string/title_activity_customer" >
+        </activity>
+        <activity
+            android:name="rental.example.sscholtz.motorental.successful_rental"
+            android:label="@string/title_activity_successful_rental" >
+        </activity>
+        <activity
+            android:name="rental.example.sscholtz.motorental.view"
+            android:label="@string/title_activity_view" >
+        </activity>
+    </application>
+
+</manifest>

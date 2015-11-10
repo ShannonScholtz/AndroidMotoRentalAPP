@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="rental.example.sscholtz.motorental.about_us"
+    android:background="#C0C0C0">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/log"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollViewContactUs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/listViewSalesperson"
+        android:layout_alignBottom="@+id/listViewSalesperson">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/btnBack2"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:background="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/listViewSalesperson"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="You may contact us and ask for one of the above Sales Assistants on "
+        android:id="@+id/textView18"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/scrollViewContactUs"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Tel: 021 3452245"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/textView20"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Fax: 021 3452246"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Email: dummy@motorental.com"
+        android:id="@+id/textView21"
+        android:layout_below="@+id/textView19"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
